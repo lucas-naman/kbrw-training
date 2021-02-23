@@ -1,6 +1,0 @@
-[submodule ".github-markdown-css"]
-	path = .github-markdown-css
-	url = https://github.com/sindresorhus/github-markdown-css.git
-[submodule "chap_infra/chef-repo"]
-	path = chap_infra/chef-repo
-	url = ssh://git.priv.cloud.kbrwadventure.com/~git/chef-repo
