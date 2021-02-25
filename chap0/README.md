@@ -85,7 +85,7 @@ To create a `mix` project run the following command:
 This command will generate a mix project containing the different folders:
 **`config`**, **`lib`** and **`test`** with the file `mix.exs`
 
-The ****mix.exs**** is the project description file. It contains an **elixir**
+The \***\*mix.exs\*\*** is the project description file. It contains an **elixir**
 module that `use` the library **`Mix.Project`** and implement the `mix` required
 functions to enable `mix` to compile our project.
 
@@ -111,17 +111,17 @@ def start(type, args)
 I will now list the command that you will need to compile, execute and reload
 a mix project.
 
-****Compilation****: To compile a mix project you need to run the command:
+\***\*Compilation\*\***: To compile a mix project you need to run the command:
 
     mix compile
 
-****Launch****: To launch the project, you can run the following command. Be
+\***\*Launch\*\***: To launch the project, you can run the following command. Be
 careful, this command include the compilation of the project in it. This must
 be run in the root folder of your poject
 
     iex -S mix
 
-****Reload****: You can reload the project while in an `iex` instance. The first
+\***\*Reload\*\***: You can reload the project while in an `iex` instance. The first
 way is to compile the project in a terminal and then in an `iex` instance already
 running type `r` <ModuleToReload>
 
@@ -150,10 +150,12 @@ quick introduction to `mix` on the **elixir** offcial website.
   A string is a UTF-8 encoded binary
   We can write them using the binary / bitstring constructor "<<>>" ex: <<3:: 4>>. Same in Erlang
 - What is the main difference between a Stream and an Enum ?
+  Streams are lazy, composable enumerables.
+  Instead of generating intermediate lists, streams build a series of computations that are invoked only when we pass the underlying stream to the Enum module. Streams are useful when working with large, possibly infinite, collections.
 - Sort this data structures from the cheapest to the most expensive one in terms of number of operations and CPU time:
-  - List
-  - Bitstring
-  - Charlist
+  - List 3
+  - Bitstring 1
+  - Charlist 2
 
 ---
 
